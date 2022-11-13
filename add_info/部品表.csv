@@ -1,0 +1,34 @@
+Reference, Value, Footprint,説明
+C1,10u,Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップコンデンサ10uF
+C2,0.1u,Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップコンデンサ0.1uF
+C3,10p,Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップコンデンサ10pF
+C4,10p,Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップコンデンサ10pF
+C5,0.1u,Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップコンデンサ0.1uF
+C6,0.1u,Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップコンデンサ0.1uF
+C7,0.1u,Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップコンデンサ0.1uF
+C8,10u,Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップコンデンサ10uF
+C9,0.1u,Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップコンデンサ0.1uF
+C10,0.1u,Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップコンデンサ0.1uF
+C11,0.1u,Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップコンデンサ0.1uF
+C12,0.1u,Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップコンデンサ0.1uF
+C13,0.1u,Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップコンデンサ0.1uF
+D1,LED,LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップLED GREEN
+D2,LED,LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップLED RED
+D3,LED,LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップLED GREEN
+D4,LED,LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップLED YELLOW
+J1,USB_B_Mini,Connector_USB:USB_Mini-B_Wuerth_65100516121_Horizontal,USB miniBコネクタ
+J2,Conn_02x03_Odd_Even,Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD,ICSP用PAD　はんだづけ非推奨
+J3,Conn_01x29,0_kicad_wood:PinHeader_1x29_P2.54mm_Horizontal_SMD_PSL-410256-29,表面実装ライトアングルピンヘッダ　1×29
+R1,1k,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップ抵抗1kΩ
+R2,1k,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップ抵抗1kΩ
+R3,1k,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップ抵抗1kΩ
+R4,4.7k,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップ抵抗4.7kΩ
+R5,4.7k,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップ抵抗4.7kΩ
+R6,10k,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップ抵抗10kΩ
+R7,1k,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,チップ抵抗1kΩ
+SW1,SW_Push,0_kicad_wood:SW_TVAF06-A020B-R,表面実装スイッチ
+U1,NJM2845DL1-33,Package_TO_SOT_SMD:TO-252-2,3端子レギュレータ NJM2845DL1-33
+U2,CH340G,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,USBシリアル変換 CH340G
+U3,ATmega328P-AU,Package_QFP:TQFP-32_7x7mm_P0.8mm,AVRマイコン ATMEGA328P-AU
+Y1,Crystal_GND24,Crystal:Crystal_SMD_SeikoEpson_FA238V-4Pin_3.2x2.5mm_HandSoldering,クリスタル12MHz
+Y2,Resonator,Crystal:Resonator_SMD_muRata_CSTxExxV-3Pin_3.0x1.1mm_HandSoldering,セラロック16MHz
