@@ -20,15 +20,15 @@ add_info/部品表.csvを見てはんだづけを行ってください。
 
 2.CH340G  
 〇のマークは1番ピンの意味なので、〇のマークに注目して画像と同様の向きにしてください。  
-<img src="./add_info/soldering_ch340g.PNG" alt="回路図" width="200"/>  
+<img src="./add_info/soldering_CH340G.PNG" alt="回路図" width="200"/>  
 
 3.ATMEGA328P  
 〇のマークは1番ピンの意味なので、〇のマークに注目して画像と同様の向きにしてください。  
-<img src="./add_info/soldering_atmega328p.PNG" alt="回路図" width="200"/>  
+<img src="./add_info/soldering_ATMEGA328P.PNG" alt="回路図" width="200"/>  
 
 4.LED  
 LEDにはアノード・カソードという端子があり極性があります。写真のような向きにしてください。裏面の方が分かりやすいので裏面も写真にのせています。
-<img src="./add_info/soldering_led.PNG" alt="回路図" width="200"/>  
+<img src="./add_info/soldering_LED.PNG" alt="回路図" width="200"/>  
 
 # ブートローダ書き込みについて
 Arduinoはブートローダと呼ばれるプログラムを書きこむためのプログラムを書きこむことで動作します。ここではブートローダの書きこみ方について説明します。  
