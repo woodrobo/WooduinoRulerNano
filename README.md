@@ -1,7 +1,7 @@
 # WooduinoRulerNano
 WooduinoRulerNanoは定規風Arduino Nano互換機です。  
 定規っぽい見た目なだけでなく、電源電流マシマシに設計していて、3.3Vには800mAの3端子レギュレータを採用していて5Vも配線幅的には2Aほど流せます。Vin端子は使ったこと無かったのでつけていないです。  
-[BOOTH](hoge.com)で販売しています。
+[BOOTH](https://woodrobo.booth.pm/items/3751720)で販売しています。
 
 <img src="./add_info/schematic.png" alt="回路図" width="400"/>  
 <img src="./add_info/WooduinoRulerNano.jpg" alt="基板表面" width="400"/>  
