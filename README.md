@@ -31,24 +31,59 @@ LEDにはアノード・カソードという端子があり極性がありま�
 <img src="./add_info/soldering_LED.PNG" alt="回路図" width="200"/>  
 
 # ブートローダ書き込みについて
-Arduinoはブートローダと呼ばれるプログラムを書きこむためのプログラムを書きこむことで動作します。ここではブートローダの書きこみ方について説明します。  
-他のサイトでも紹介されていますが、ArduinoではArduinoを用いてブートローダの書き込みが行えます。  
+Arduinoはブートローダと呼ばれるプログラムを書きこむためのプログラムを書きこむことで動作します。公式の説明は[ここ](https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoISP)。  
 ここではArduino Unoを用いてWooduinoRulerNanoに書きこみを行う方法を説明します。(WooduinoRulerNanoはArduino Nano互換機なのでArduino Nanoについて解説されている他のサイトも参考にしてみてください)  
 
-※Arduino Unoの代わりにArduino Nanoを用いてもやり方は同じです。Arduino UnoのところをArduino Nanoに読み替えてください。  
+※Arduino Unoの代わりにArduino Nanoを用いてもやり方は同じです。Arduino UnoのところをArduino Nanoに読み替えてください。 それ以外のArduinoから書き込みを行いたい場合は他のサイトを参照してください。 
 
-1.まずはArduino Unoにブートローダ書き込み用のプログラムを書きこみます。
+**テスト環境**  
+ArduinoIDE 1.8.13  
+Windows 10
 
-**現在執筆中、いましばらくお待ちください**
+**1.まずはArduino Unoにブートローダ書き込み用のプログラムを書きこみます。**
 
-2.Arduino UnoとWooduinoRulerNanoを結線します。  
+ファイル->スケッチ例->ArduinoISP->ArduinoISPを開きます。  
+Arduino Unoに書きこみます。  
 
-**現在執筆中、いましばらくお待ちください**
+**2.Arduino UnoとWooduinoRulerNanoを結線します。**
 
-3.ブートローダを書きこみます。
+書き込みには以下の表に示すように6本の配線が必要です。配線時にはどちらも電源供給は行わないでください。RESETの機能に関しては書き込み機と書き込み対象でピンが違うので注意してください。
 
-**現在執筆中、いましばらくお待ちください**
+|  機能  |  書き込み機(Arduino Uno)  |  WooduinoRulerNano
+| ---- | ---- |  ----  |
+|  MOSI  |  11  |  11  |
+|  MISO  |  12  |  12  |
+|  SCK  |  13  |  13  |
+|  RESET  |  10  |  RESET  |
+|  VCC  |  5V  |  5V  |
+|  GND  |  GND  |  GND  |
 
-(4.Lチカのプログラムを書きこんでみましょう。)  
+**3.ブートローダを書きこみます。**
 
-**現在執筆中、いましばらくお待ちください**
+書き込み機であるArduino UnoとパソコンをUSBケーブルで接続してください。(WooduinoRulerNanoへはUSBケーブルを**接続しません**)  
+
+ArduinoIDEにて以下のように設定を行います。
+
+- ツール->ボード->Arduino Nano  
+- ツール->プロセッサ->ATmega328P  
+- 「ツール->シリアルポート」に書き込み装置のArduino Unoのポートを選択
+- ツール->書き込み装置->Arduino as ISP
+
+「ツール->ブートローダを書き込む」でSuccessになれば成功です。
+
+**(4.Lチカのプログラムを書きこんでみましょう。)**  
+
+WooduinoRulerNanoとパソコンをUSBケーブルで接続してください。  
+
+ファイル->スケッチ例->01.Basics->Blinkを開きます。  
+
+- ツール->ボード->Arduino Nano  
+- ツール->プロセッサ->ATmega328P 
+- 「ツール->シリアルポート」にWooduinoRulerNanoのポートを選択
+- ツール->書き込み装置->ArduinoISP
+
+書き込んでLチカができたら成功です。  
+
+# トラブルシューティング
+Q.WooduinoRulerNanoのUSBまわりがおかしい  
+A.WooduinoRulerNanoのUSBシリアル変換にはCH340を使用しているのでUSBドライバがパソコンにインストールされていない可能性があります。CH340のUSBドライバをパソコンに入れてください。
